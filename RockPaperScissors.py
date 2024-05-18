@@ -4,10 +4,10 @@ def RCP(mc, *others):
     mc = mc.lower()
     user = 0
     comp = 0
-    print("Rock 🪨, Paper 📄, Scissors ✂️\n")
+    print("Rock ⚫, Paper 📄, Scissors ✂️\n")
     if mc not in ["rock", "paper", "scissors"]:
-        print("Invalid input, choose between rock 🪨, paper 📄 or scissors ✂️\n\nTry again\n")
-        RCP(input("Choose between rock 🪨, paper 📄 or scissors ✂️  : "))
+        print("Invalid input, choose between rock ⚫, paper 📄 or scissors ✂️\n\nTry again\n")
+        RCP(input("Choose between rock ⚫, paper 📄 or scissors ✂️  : "))
     cc = random.choice(["rock", "paper", "scissors"])
     if mc == "rock" and cc == "scissors":
         user += 1
@@ -47,7 +47,7 @@ def RCP(mc, *others):
         print("Invalid input, try again")
         ans = input("\nDo you want to play again? 🤔\n:")
     if ans.lower() == "yes":
-        mc = input("Choose between rock 🪨, paper 📄 or scissors ✂️ : ")
+        mc = input("Choose between rock ⚫, paper 📄 or scissors ✂️ : ")
         RCP(mc)
     else:
         print("\nBye 👋, thanks for playing!")
